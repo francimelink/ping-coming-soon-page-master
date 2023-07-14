@@ -211,7 +211,7 @@ header {
         font-size: 1.25rem; }
       header form {
         flex-flow: row wrap; }
-        header form input {
+        header form div {
           flex: 3; }
         header form button {
           height: 3.5625rem;
