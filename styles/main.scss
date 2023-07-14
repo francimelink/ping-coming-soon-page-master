@@ -1,0 +1,48 @@
+@import 'reset';
+@import 'variables';
+@import 'global';
+@import 'header';
+
+
+main {
+    margin-top: 5.875rem;
+
+    picture,
+    img {
+        max-width: 100%;
+    }
+}
+
+footer {
+    margin-top: 7.5rem;
+
+    >div {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1.6875rem;
+    }
+
+    .social-media {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $clr-primary;
+        border-radius: 50%;
+        color: $clr-primary;
+        padding: .5rem;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            color: white;
+            background-color: $clr-primary;
+        }
+    }
+
+    .attribution {
+        margin: 1rem 0;
+    }
+}

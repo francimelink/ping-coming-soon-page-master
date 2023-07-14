@@ -1,0 +1,110 @@
+header {
+    text-align: center;
+    width: 100%;
+    min-width: 18.875rem;
+    margin: 0 auto;
+    padding: 0 .625rem;
+
+    .logo {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        color: $clr-natural-gray;
+
+        span {
+            color: $clr-natural-blue;
+            font-weight: $fwBold;
+        }
+    }
+
+    >p {
+        margin: 2rem 0;
+    }
+
+    form {
+        padding: 0 .625rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        div {
+            input {
+                width: 100%;
+                font-size: $fontSize;
+                padding: 1rem;
+                border-radius: 1.75rem;
+                border: 1px solid $clr-natural-gray;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+
+            }
+
+            p {
+                margin-top: 1rem;
+                text-align: left;
+                padding-left: 1.5rem;
+                font-style: italic;
+                font-size: .75rem;
+                display: none;
+            }
+
+            &.active {
+                color: $clr-sec-red;
+
+                >input {
+                    border: 1px solid $clr-sec-red;
+                }
+
+                p {
+                    display: block;
+                }
+            }
+
+        }
+
+        button {
+            background-color: $clr-primary;
+            width: 100%;
+            padding: 1rem;
+            color: white;
+            font-size: $fontSize;
+            border: none;
+            border-radius: 1.75rem;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1, 1.1);
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: 37.5rem) {
+        h1 {
+            font-size: 3rem;
+        }
+
+        >p {
+            font-size: 1.25rem;
+        }
+
+        form {
+            flex-flow: row wrap;
+
+            input {
+                flex: 3;
+            }
+
+            button {
+                height: 3.5625rem;
+                flex: 1;
+            }
+        }
+
+        flex: 3;
+    }
+
+}
